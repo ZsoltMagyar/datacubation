@@ -6,7 +6,7 @@ import Products from './pages/Products';
 import Contact from './pages/Contact';
 
 export const routes = [
-    { path: "/", name: "Home", component: Home },
+    { path: "/datacubation", name: "Home", component: Home },
     { path: "/esemenyek", name: "Események", component: Events },
     { path: "/blog", name: "Blog", component: Blog },
     { path: "/tanfolyamok", name: "Tanfolyamok", component: Courses },

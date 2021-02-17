@@ -1,11 +1,11 @@
 <template>
   <header>
-    <div class="logo">
-      <img src="../assets/DataCubationLogo.svg" alt="">
-    </div>
     <nav>
+      <div class="logo">
+        <router-link to="/datacubation"><img src="../assets/DataCubationLogo.svg" alt=""></router-link>
+      </div>
       <ul>
-        <li><router-link to="/">A programról</router-link></li>
+        <li><router-link to="/datacubation">A programról</router-link></li>
         <li><router-link to="/esemenyek">Események</router-link></li>
         <li><router-link to="/blog">Blog</router-link></li>
         <li><router-link to="/tanfolyamok">Tanfolyamok</router-link></li>
@@ -13,8 +13,10 @@
         <li><router-link to="/kapcsolat">Kapcsolat</router-link></li>
       </ul>
     </nav>
+    <div id="user-btn">
       <button class="btn btn-orange">Bejelentkezés</button>
       <button class="btn btn-orange">Regisztráció</button>
+    </div>
   </header>
 </template>
 
@@ -34,7 +36,12 @@ header {
   align-items: center;
 }
 
+nav {
+  display: flex
+}
+
 nav > ul {
+  padding: 0;
   display: flex;
   list-style: none;
 }
@@ -60,18 +67,6 @@ nav > ul > li > a:hover {
   color: #575757;
 }
 
-.btn {
-  border: none;
-  padding: 6px 24px;
 
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 45px;
-}
-
-.btn-orange {
-  background: #F47427;
-  border-radius: 30px;
-}
 
 </style>
