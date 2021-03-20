@@ -1,6 +1,8 @@
 <template>
   <div>
-    <img src="../assets/imi6.jpg" alt="">
+    <div class="page-header">
+      <h2>Kapcsolat</h2>
+    </div>
   </div>
 </template>
 

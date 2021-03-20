@@ -1,6 +1,8 @@
 <template>
   <div>
-    <img src="../assets/imi3.jpg" alt="">
+    <div class="page-header">
+      <h2>Blog</h2>
+    </div>
   </div>
 </template>
 

@@ -5,7 +5,7 @@
         <router-link to="/datacubation"><img src="../assets/DataCubationLogo.svg" alt=""></router-link>
       </div>
       <ul>
-        <li><router-link to="/datacubation">A programról</router-link></li>
+        <li><router-link to="/program">A programról</router-link></li>
         <li><router-link to="/esemenyek">Események</router-link></li>
         <li><router-link to="/blog">Blog</router-link></li>
         <li><router-link to="/tanfolyamok">Tanfolyamok</router-link></li>
@@ -29,8 +29,10 @@ name: "Header"
 <style scoped>
 
 header {
-  padding: 0 25px;
+  /*width: 1440px;*/
   height: 130px;
+  /*margin: 0 auto;*/
+  padding: 0 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;

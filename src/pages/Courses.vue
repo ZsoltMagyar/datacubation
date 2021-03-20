@@ -1,6 +1,8 @@
 <template>
   <div>
-    <img src="../assets/imi4.jpg" alt="">
+    <div class="page-header">
+      <h2>Tanfolyamok</h2>
+    </div>
   </div>
 </template>
 

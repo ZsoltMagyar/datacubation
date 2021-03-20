@@ -3,6 +3,57 @@ body {
     min-height: 100vh;
 }
 
+ul {
+    list-style: none;
+}
+
+h1 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 80px;
+}
+h2 {}
+h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+p {
+    margin: 0;
+}
+
+.blue-underline::after {
+    content: '';
+    display: block;
+    margin-top: 10px;
+    width: 280px;
+    height: 10px;
+    background: #2CB0C9;
+}
+
+.page-header {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    padding: 0 160px;
+
+    background: url('./images/page_header_background.svg') top left no-repeat;
+    background-size: cover;
+}
+
+.page-header > h2 {
+    /*font-family: Encode Sans Expanded;*/
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+
+    color: #FFFFFF;
+}
+
 .btn {
     border: none;
     padding: 6px 24px;
@@ -22,4 +73,30 @@ body {
     font-size: 24px;
     line-height: 45px;
     color: #FFFFFF;
+}
+
+.orange-circle-with-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #F47427;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.orange-circle-with-icon--small {
+    width: 25px;
+    height: 25px;
+}
+
+.orange-circle-with-icon--medium {
+    width: 50px;
+    height: 50px;
+}
+
+.orange-circle-with-icon--big {
+    width: 106px;
+    height: 106px;
+    font-size: 64px;
 }

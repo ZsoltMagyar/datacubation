@@ -1,14 +1,14 @@
 <template>
   <div>
     <div class="page-header">
-      <h2>Termékek</h2>
+      <h2>A programról</h2>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Products"
+name: "Program"
 }
 </script>
 

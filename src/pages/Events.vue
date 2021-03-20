@@ -1,6 +1,8 @@
 <template>
   <div>
-    <img src="../assets/imi2.jpg" alt="">
+    <div class="page-header">
+      <h2>Események</h2>
+    </div>
   </div>
 </template>
 
