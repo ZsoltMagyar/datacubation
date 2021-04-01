@@ -1,14 +1,17 @@
 <template>
   <div>
-    <div class="page-header">
-      <h2>A programról</h2>
-    </div>
+    <PageHeader title="A programról"></PageHeader>
+
   </div>
 </template>
 
 <script>
+import PageHeader from "../components/PageHeader";
 export default {
-name: "Program"
+name: "Program",
+  components: {
+    PageHeader
+  }
 }
 </script>
 

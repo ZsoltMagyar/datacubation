@@ -25,6 +25,11 @@ p {
     margin: 0;
 }
 
+.container {
+    max-width: 1440px;
+    padding: 0 100px;
+}
+
 .blue-underline::after {
     content: '';
     display: block;
@@ -32,26 +37,6 @@ p {
     width: 280px;
     height: 10px;
     background: #2CB0C9;
-}
-
-.page-header {
-    height: 200px;
-    display: flex;
-    align-items: center;
-    padding: 0 160px;
-
-    background: url('./images/page_header_background.svg') top left no-repeat;
-    background-size: cover;
-}
-
-.page-header > h2 {
-    /*font-family: Encode Sans Expanded;*/
-    font-style: normal;
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 60px;
-
-    color: #FFFFFF;
 }
 
 .btn {

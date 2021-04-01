@@ -21,7 +21,6 @@ name: "Footer"
 <style scoped>
 
 footer {
-  margin-top: 20px;
   height: 100px;
   display: flex;
   align-items: center;

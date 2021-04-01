@@ -1,14 +1,16 @@
 <template>
   <div id="hero">
 
-    <div id="hero-content">
-      <h1>Datacubation Virtuális Inkubációs Központ</h1>
-      <img src="../../assets/images/cloude1.svg" alt="valamifelhő">
+    <div class="container">
+      <div id="hero-content">
+        <h1>Datacubation Virtuális Inkubációs Központ</h1>
+        <img src="../../assets/images/cloude1.svg" alt="valamifelhő">
+      </div>
+
+      <button class="btn btn-orange">Inkubációs program bemutatása</button>
+
+      <img id="szechenyi" src="../../assets/images/szechenyiterv.svg" alt="szechenyi2020">
     </div>
-
-    <button class="btn btn-orange">Inkubációs program bemutatása</button>
-
-    <img id="szechenyi" src="../../assets/images/szechenyiterv.svg" alt="szechenyi2020">
 
   </div>
 </template>
@@ -19,7 +21,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 #hero {
   display: flex;
   flex-direction: column;
@@ -37,15 +39,15 @@ export default {
 #hero-content {
   padding: 0 30px;
   display: flex;
-}
 
-#hero-content > h1 {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 96px;
-  line-height: 120px;
-  text-align: left;
-  color: #FFFFFF;
+  h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 120px;
+    text-align: left;
+    color: #FFFFFF;
+  }
 }
 
 #szechenyi {

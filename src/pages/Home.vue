@@ -11,6 +11,8 @@
 
     <messageTo></messageTo>
 
+    <HomePentaBullshit></HomePentaBullshit>
+
   </div>
 </template>
 
@@ -18,28 +20,30 @@
 import HomeHero from "./home-sections/HomeHero";
 import HomeAbout from "./home-sections/HomeAbout";
 import MessageTo from "./home-sections/MessageTo";
+import HomePentaBullshit from "./home-sections/HomePentaBullshit";
 export default {
   name: "Home.vue",
   components: {
     homeHero: HomeHero,
     homeAbout: HomeAbout,
-    messageTo: MessageTo
+    messageTo: MessageTo,
+    HomePentaBullshit
   },
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
 .divider {
   height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-.divider > h1 {
-  text-transform: uppercase;
-  font-size: 64px;
+  h1 {
+    text-transform: uppercase;
+    font-size: 64px;
+  }
 }
 
 </style>

@@ -1,14 +1,16 @@
 <template>
   <div>
-    <div class="page-header">
-      <h2>Termékek</h2>
-    </div>
+    <PageHeader title="Termékek"></PageHeader>
   </div>
 </template>
 
 <script>
+import PageHeader from "../components/PageHeader";
 export default {
-  name: "Products"
+  name: "Products",
+  components: {
+    PageHeader
+  }
 }
 </script>
 

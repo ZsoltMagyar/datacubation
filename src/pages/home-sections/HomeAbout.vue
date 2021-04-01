@@ -6,19 +6,19 @@
       <p>Inkubátorházunk  portálján lehetőséged van innovatív termékeidet, szolgáltatásaidat, eseményeidet és egyéb vállalati aktualitásaidat  közzé tenni egyéb kötelezettségek nélkül, valamint más olyan szolgáltatásokat igénybe venni, amelyek a piacon nem, vagy kedvezőtlenebb feltételekkel érhetők el. Tagsággal járó előnyök:</p>
       <ul>
         <li>
-          <i class="las la-deaf"></i>
+          <i class="las la-calendar-alt"></i>
           <p><span>Események feltöltése</span> - az Események menüpont alá</p>
         </li>
         <li>
-          <i class="las la-deaf"></i>
+          <i class="las la-school"></i>
           <p><span>Tanfolyamok közzététele</span> a Tanfolyamok menüpont alatt</p>
         </li>
         <li>
-          <i class="las la-deaf"></i>
+          <i class="las la-shopping-cart"></i>
           <p><span>Innovatív termékek és szolgáltatások feltöltése</span> a Termékek menüpont alatt</p>
         </li>
         <li>
-          <i class="las la-deaf"></i>
+          <i class="las la-percent"></i>
           <p><span>Olyan innovatív termékek, szolgáltatások vagy tanfolyamok igénybevétele</span>, amelyek a piacon nem vagy kedvezőtlenebb feltételekkel érhetőek el</p>
         </li>
       </ul>
@@ -27,7 +27,7 @@
     <div id="about__right">
       <div class="list-item">
         <div class="list-item__icon orange-circle-with-icon orange-circle-with-icon--big">
-          <i class="las la-deaf"></i>
+          <i class="las la-user-graduate"></i>
         </div>
         <div class="list-item__description">
           <h3>Értékteremtő tudást szerezhetsz és adhatsz át</h3>
@@ -36,7 +36,7 @@
       </div>
       <div class="list-item">
         <div class="list-item__icon orange-circle-with-icon orange-circle-with-icon--big">
-          <i class="las la-deaf"></i>
+          <i class="las la-handshake"></i>
         </div>
         <div class="list-item__description">
           <h3>Potenciális értékesítési lehetőségeket szerezhetsz</h3>
@@ -45,7 +45,7 @@
       </div>
       <div class="list-item">
         <div class="list-item__icon orange-circle-with-icon orange-circle-with-icon--big">
-          <i class="las la-deaf"></i>
+          <i class="las la-money-bill-wave"></i>
         </div>
         <div class="list-item__description">
           <h3>Díjtalan tagság</h3>
@@ -63,7 +63,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
 #about {
   display: flex;
@@ -74,79 +74,75 @@ export default {
 
   background: url("../../assets/images/background2.svg") top left no-repeat;
   background-size: cover;
-}
 
-#about__left {
-  width: 45%;
-  padding: 30px;
-  text-align: left;
-  color: #fff;
-}
+  &__left {
+    width: 45%;
+    padding: 30px;
+    text-align: left;
+    color: #fff;
 
-#about__left > p {
-  margin: 100px 0;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 25px;
-}
+    > p {
+      margin: 100px 0;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 25px;
+    }
 
-#about__left > ul {
-  padding: 0;
-  margin: 100px 0;
-  font-size: 20px;
+    > ul {
+      padding: 0;
+      margin: 100px 0;
+      font-size: 20px;
 
-}
+      li {
+        display: flex;
+        margin-bottom: 24px;
+      }
 
-#about__left > ul > li {
-  display: flex;
-  margin-bottom: 24px;
-}
+      i {
+        width: 25px;
+        height: 25px;
+        margin-right: 24px;
+      }
 
-#about__left > ul > li > i {
-  width: 25px;
-  height: 25px;
-  margin-right: 24px;
-}
+      span {
+        font-weight: bold;
+      }
+    }
+  }
 
-#about__left > ul > li > p > span {
-  font-weight: bold;
-}
-
-#about__right {
-  width: 45%;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-}
-
-#about__right > .list-item {
-  display: flex;
+  &__right {
+    width: 45%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .list-item {
+  display: flex;
   width: 100%;
   margin-bottom: 70px;
-}
 
-.list-item__icon {
-  min-width: 106px;
-  margin-right: 20px;
-}
+  &__icon {
+    min-width: 106px;
+    margin-right: 20px;
+  }
 
-.list-item__description {
-  text-align: left;
-}
+  &__description {
+    text-align: left;
 
-.list-item__description > h3 {
-  color: white;
-  text-transform: uppercase;
-}
+    h3 {
+      color: white;
+      text-transform: uppercase;
+    }
 
-.list-item__description > p {
-  color: white;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 25px;
+    p {
+      color: white;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
 }
 
 </style>

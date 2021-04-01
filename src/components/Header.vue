@@ -26,13 +26,12 @@ name: "Header"
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
 header {
-  /*width: 1440px;*/
   height: 130px;
-  /*margin: 0 auto;*/
-  padding: 0 25px;
+  //width: 1440px;
+  //margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <PageHeader title="Kapcsolat"></PageHeader>
+    <PageHeader title="Bejelentkezés"></PageHeader>
 
   </div>
 </template>
@@ -8,7 +8,7 @@
 <script>
 import PageHeader from "../components/PageHeader";
 export default {
-name: "Contact",
+name: "Login",
   components: {
     PageHeader
   }
