@@ -13,7 +13,11 @@ h1 {
     font-size: 64px;
     line-height: 80px;
 }
-h2 {}
+h2 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+}
 h3 {
     margin: 0;
     font-size: 24px;
@@ -30,12 +34,25 @@ p {
     padding: 0 100px;
 }
 
+.page-wrapper {
+    position: relative;
+}
+
 .blue-underline::after {
     content: '';
     display: block;
     margin-top: 10px;
     width: 280px;
     height: 10px;
+    background: #2CB0C9;
+}
+
+.blue-underline--thin::after {
+    content: '';
+    display: block;
+    margin-top: 10px;
+    width: 280px;
+    height: 5px;
     background: #2CB0C9;
 }
 
@@ -47,6 +64,7 @@ p {
     font-weight: 600;
     font-size: 24px;
     line-height: 45px;
+    outline: none;
 }
 
 .btn-orange {
@@ -78,6 +96,7 @@ p {
 .orange-circle-with-icon--medium {
     width: 50px;
     height: 50px;
+    font-size: 32px;
 }
 
 .orange-circle-with-icon--big {

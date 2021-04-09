@@ -18,7 +18,7 @@ name: "Footer"
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
 footer {
   height: 100px;
@@ -32,6 +32,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  span {
+    margin-right: 8px;
+  }
 }
 
 </style>

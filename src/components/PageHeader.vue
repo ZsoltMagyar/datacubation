@@ -21,6 +21,7 @@ name: "PageHeader",
   height: 200px;
   background: url('../assets/images/page_header_background.svg') top left no-repeat;
   background-size: cover;
+  border-bottom: 4px solid #A2CFD1;
 }
 
 .page-header-content {

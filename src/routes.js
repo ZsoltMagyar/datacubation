@@ -5,6 +5,7 @@ import Blog from './pages/Blog';
 import Courses from './pages/Courses';
 import Products from './pages/Products';
 import Contact from './pages/Contact';
+import BlogPost from "@/pages/BlogPost";
 
 export const routes = [
     { path: "/", component: Home },
@@ -12,6 +13,7 @@ export const routes = [
     { path: "/program", name: "Program", component: Program },
     { path: "/esemenyek", name: "Események", component: Events },
     { path: "/blog", name: "Blog", component: Blog },
+    { path: "/blog-post", name: "BlogPost", component: BlogPost},
     { path: "/tanfolyamok", name: "Tanfolyamok", component: Courses },
     { path: "/termekek", name: "Termékek", component: Products },
     { path: "/kapcsolat", name: "Kapcsolat", component: Contact }
