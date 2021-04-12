@@ -47,7 +47,7 @@ export default {
   border-top: 4px solid #A2CFD1;
 
   q {
-    padding: 50px;
+    padding-left: 50px;
     display: block;
     height: 320px;
     width: 850px;

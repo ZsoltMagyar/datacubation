@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
 body {
     margin: 0;
     min-height: 100vh;
@@ -29,6 +34,14 @@ p {
     margin: 0;
 }
 
+input,
+textarea {
+    padding: 10px 20px;
+    background: rgba(162, 207, 209, 0.2);
+    border: none;
+    margin-bottom: 30px;
+}
+
 .container {
     max-width: 1440px;
     padding: 0 100px;
@@ -36,6 +49,11 @@ p {
 
 .page-wrapper {
     position: relative;
+}
+
+.blue-underline,
+.blue-underline--thin {
+    display: inline-block;
 }
 
 .blue-underline::after {
