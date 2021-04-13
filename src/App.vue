@@ -19,17 +19,35 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import '/src/assets/mixins.scss';
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  min-height: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
 main {
-  min-height: calc(100vh - 230px)
+  min-height: calc(100vh - 230px);
+  padding-bottom: 100px;
+
+  @include tablet {
+    padding-bottom: 75px;
+  }
+
+  @include tablet-small {
+    padding-bottom: 65px;
+  }
+
+  @include phone {
+    padding-bottom: 50px;
+  }
 }
+
+Footer {
+  position: absolute;
+  bottom: 0;
+}
+
 </style>

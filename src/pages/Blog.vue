@@ -63,21 +63,34 @@ name: "Blog",
 </script>
 
 <style scoped lang="scss">
+@import '/src/assets/mixins.scss';
 
 #blog {
   position: relative;
-  padding: 0 250px;
+  padding: 50px 250px;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+
+  @include tablet {
+    padding: 50px 100px;
+  }
+
+  @include tablet-small {
+    padding: 25px 35px;
+  }
+
+  @include phone {
+    padding: 25px 25px;
+  }
 }
 
 .blog-post {
   display: flex;
-  margin-top: 115px;
   max-width: 980px;
+  margin-bottom: 50px;
 
   &-date {
     margin-right: 20px;
