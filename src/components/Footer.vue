@@ -7,7 +7,7 @@
       <span>Adatvédelem</span>
       <span>ÁSZF</span>
       <span>Impresszum</span>
-      <span>GYIK</span>
+      <span><router-link to="/gyik">GYIK</router-link></span>
     </div>
   </footer>
 </template>
@@ -22,6 +22,7 @@ name: "Footer"
 @import '/src/assets/mixins.scss';
 
 footer {
+  z-index: 3;
   width: 100%;
   height: 100px;
   display: flex;

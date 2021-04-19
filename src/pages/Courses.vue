@@ -8,7 +8,7 @@
 
     <div id="course-list">
 
-      <template v-for="n in 10" v-bind:key="n">
+      <template v-for="n in 9" v-bind:key="n">
         <router-link to="/tanfolyam">
           <div class="course" >
             <img src="https://via.placeholder.com/400x250">
@@ -41,14 +41,6 @@ name: "Courses",
 </script>
 
 <style scoped lang="scss">
-
-a {
-  text-decoration: none;
-
-  &:visited {
-    color: inherit;
-  }
-}
 
 #courses-search {
   height: 80px;

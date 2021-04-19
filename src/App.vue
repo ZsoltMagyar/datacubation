@@ -33,15 +33,15 @@ main {
   padding-bottom: 100px;
 
   @include tablet {
-    padding-bottom: 75px;
+    margin-bottom: 75px;
   }
 
   @include tablet-small {
-    padding-bottom: 65px;
+    margin-bottom: 65px;
   }
 
   @include phone {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
   }
 }
 

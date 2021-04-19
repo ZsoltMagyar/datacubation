@@ -13,25 +13,31 @@
           <li><router-link to="/kapcsolat">Kapcsolat</router-link></li>
         </ul>
         <div id="user-buttons">
-          <button class="btn btn-orange">Bejelentkezés</button>
+          <button class="btn btn-orange" @click="$router.push('/login')">Bejelentkezés</button>
           <button class="btn btn-orange">Regisztráció</button>
         </div>
       </nav>
 
       <nav id="mobile-navigation">
 
-        <input type="checkbox" />
+        <input v-model="hamburger" type="checkbox" />
         <span></span>
         <span></span>
         <span></span>
 
         <ul id="menu">
-          <li><router-link to="/program">A programról</router-link></li>
-          <li><router-link to="/esemenyek">Események</router-link></li>
-          <li><router-link to="/blog">Blog</router-link></li>
-          <li><router-link to="/tanfolyamok">Tanfolyamok</router-link></li>
-          <li><router-link to="/termekek">Termékek</router-link></li>
-          <li><router-link to="/kapcsolat">Kapcsolat</router-link></li>
+          <li v-on:click="closeHamburgerMenu"><router-link to="/program">A programról</router-link></li>
+          <li v-on:click="closeHamburgerMenu"><router-link to="/esemenyek">Események</router-link></li>
+          <li v-on:click="closeHamburgerMenu"><router-link to="/blog">Blog</router-link></li>
+          <li v-on:click="closeHamburgerMenu"><router-link to="/tanfolyamok">Tanfolyamok</router-link></li>
+          <li v-on:click="closeHamburgerMenu"><router-link to="/termekek">Termékek</router-link></li>
+          <li v-on:click="closeHamburgerMenu"><router-link to="/kapcsolat">Kapcsolat</router-link></li>
+          <li>
+            <button class="btn btn-orange" @click="$router.push('/login')">Bejelentkezés</button>
+          </li>
+          <li>
+            <button class="btn btn-orange">Regisztráció</button>
+          </li>
         </ul>
       </nav>
   </header>
@@ -39,7 +45,17 @@
 
 <script>
 export default {
-name: "Header"
+name: "Header",
+  data: function () {
+  return {
+      hamburger: false
+    }
+  },
+  methods: {
+    closeHamburgerMenu: function() {
+      this.hamburger = false
+    }
+  }
 }
 </script>
 
@@ -105,22 +121,32 @@ header {
   }
 
   #menu {
-    margin: 0;
-    padding: 10px;
-    z-index: 9999;
+    margin: 0 auto;
+    padding: 25px;
+    z-index: 100;
     display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: fixed;
-    top: 145px;
-    bottom: 65px;
+    top: 0;
+    bottom: 0;
+    left: 0;
     right: 0;
     width: 100%;
     background: #fff;
+
     li {
-      margin-bottom: 10px;
+      margin: 25px 20px;
+
+      button {
+        margin: 0;
+      }
     }
   }
 
   input {
+    z-index: 102;
     display: flex;
     width: 40px;
     height: 32px;
@@ -129,16 +155,16 @@ header {
     left: -5px;
     cursor: pointer;
     opacity: 0;
-    z-index: 2;
     -webkit-touch-callout: none;
 
     &:checked ~ #menu {
-      display: block;
-
+      display: flex;
     }
 
     &:checked ~ span
     {
+      //position: fixed;
+      z-index: 101;
       opacity: 1;
       transform: rotate(45deg) translate(-2px, -1px);
       background: #232323;

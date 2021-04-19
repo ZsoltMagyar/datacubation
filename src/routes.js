@@ -7,6 +7,9 @@ import Products from './pages/Products';
 import Contact from './pages/Contact';
 import BlogPost from "@/pages/BlogPost";
 import Course from "@/pages/Course";
+import Product from "@/pages/Product";
+import GYIK from "@/pages/GYIK";
+import Login from "@/pages/Login";
 
 export const routes = [
     { path: "/", component: Home },
@@ -18,5 +21,8 @@ export const routes = [
     { path: "/tanfolyamok", name: "Tanfolyamok", component: Courses },
     { path: "/tanfolyam", name: "Tanfolyam", component: Course },
     { path: "/termekek", name: "Termékek", component: Products },
-    { path: "/kapcsolat", name: "Kapcsolat", component: Contact }
+    { path: "/termek", name: "Termék", component: Product },
+    { path: "/kapcsolat", name: "Kapcsolat", component: Contact },
+    { path: "/gyik", name: "GYIK", component: GYIK },
+    { path: "/login", component: Login }
 ];
