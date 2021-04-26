@@ -49,6 +49,7 @@ a {
 }
 
 input,
+select,
 textarea {
     padding: 10px 20px;
     background: rgba(162, 207, 209, 0.2);
@@ -89,6 +90,7 @@ textarea {
 }
 
 .btn {
+    max-width: 500px;
     border: none;
     padding: 6px 24px;
     margin-right: 20px;
@@ -149,4 +151,38 @@ textarea {
         height: 106px;
         font-size: 64px;
     }
+}
+
+.registration-form {
+    border: 1px solid #2E91A6;
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 80%;
+
+    .form-control {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 27px;
+            color: #707070;
+            margin-bottom: 20px;
+
+            span {
+                color: red;
+            }
+        }
+
+        textarea {
+            resize: vertical;
+        }
+    }
+
+    #submit-wrapper {
+        margin-top: 50px;
+        text-align: right;
+    }
+
 }

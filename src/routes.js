@@ -10,6 +10,9 @@ import Course from "@/pages/Course";
 import Product from "@/pages/Product";
 import GYIK from "@/pages/GYIK";
 import Login from "@/pages/Login";
+import Registration from "@/pages/Registration";
+import UserReg from "@/pages/UserReg";
+import CompanyReg from "@/pages/CompanyReg";
 
 export const routes = [
     { path: "/", component: Home },
@@ -24,5 +27,8 @@ export const routes = [
     { path: "/termek", name: "Termék", component: Product },
     { path: "/kapcsolat", name: "Kapcsolat", component: Contact },
     { path: "/gyik", name: "GYIK", component: GYIK },
-    { path: "/login", component: Login }
+    { path: "/login", component: Login },
+    { path: "/registration", component: Registration },
+    { path: "/user-registration", component: UserReg },
+    { path: "/company-registration", component: CompanyReg },
 ];

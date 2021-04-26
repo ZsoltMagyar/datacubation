@@ -6,7 +6,7 @@
       <input type="text" placeholder="Felhasználónév">
       <input type="password" placeholder="Jelszó">
       <button type="submit" class="btn btn-orange">Bejelentkezés</button>
-      <span>Elfelejtett jelszó</span>
+      <a>Elfelejtett jelszó</a>
     </form>
 
   </div>
@@ -30,6 +30,12 @@ name: "Login",
   max-width: 470px;
   display: flex;
   flex-direction: column;
+
+  a {
+    margin-top: 20px;
+    color: #2D7A8C;
+    font-size: 14px;
+  }
 }
 
 </style>

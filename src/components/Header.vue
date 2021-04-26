@@ -14,7 +14,7 @@
         </ul>
         <div id="user-buttons">
           <button class="btn btn-orange" @click="$router.push('/login')">Bejelentkezés</button>
-          <button class="btn btn-orange">Regisztráció</button>
+          <button class="btn btn-orange" @click="$router.push('/registration')">Regisztráció</button>
         </div>
       </nav>
 

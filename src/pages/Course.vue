@@ -1,69 +1,74 @@
 <template>
   <PageHeader title="Tanfolyam neve"></PageHeader>
-  <div id="course">
-    <div id="course__left">
-      <img src="https://via.placeholder.com/400x250">
-      <p id="course__price">300 000 Ft</p>
+  <section>
+
+    <div id="course">
+      <div id="course__left">
+        <img src="https://via.placeholder.com/400x250">
+        <p id="course__price">300 000 Ft</p>
+      </div>
+      <div id="course__right">
+
+        <ul class="tabs" role="tablist">
+          <li>
+            <input type="radio" name="tabs" id="tab1" checked />
+            <label for="tab1"
+                   role="tab"
+                   aria-selected="true"
+                   aria-controls="panel1"
+                   tabindex="0">Áttekintés</label>
+            <div id="tab-content1"
+                 class="tab-content"
+                 role="tabpanel"
+                 aria-labelledby="description"
+                 aria-hidden="false">
+              <p>fdsgsdgdfsgsd</p>
+            </div>
+          </li>
+
+          <li>
+            <input type="radio" name="tabs" id="tab2" />
+            <label for="tab2"
+                   role="tab"
+                   aria-selected="false"
+                   aria-controls="panel2"
+                   tabindex="0">Tanterv</label>
+            <div id="tab-content2" class="tab-content" role="tabpanel" aria-labelledby="description"  aria-hidden="false">
+              <p>asd</p>
+            </div>
+          </li>
+
+          <li>
+            <input type="radio" name="tabs" id="tab3" />
+            <label for="tab3"
+                   role="tab"
+                   aria-selected="false"
+                   aria-controls="panel3"
+                   tabindex="0">Oktató</label>
+            <div id="tab-content3" class="tab-content" role="tabpanel" aria-labelledby="description"  aria-hidden="false">
+              <p>asddddddddddddddddddddddd</p>
+            </div>
+          </li>
+
+          <li>
+            <input type="radio" name="tabs" id="tab4" />
+            <label for="tab4"
+                   role="tab"
+                   aria-selected="false"
+                   aria-controls="panel4"
+                   tabindex="0">Vélemények</label>
+            <div id="tab-content4" class="tab-content" role="tabpanel" aria-labelledby="description"  aria-hidden="false">
+              <p>asgfdgsdfgsdfgsdfgfsdgfsdgsdfgd</p>
+            </div>
+          </li>
+        </ul>
+
+      </div>
     </div>
-    <div id="course__right">
 
-      <ul class="tabs" role="tablist">
-        <li>
-          <input type="radio" name="tabs" id="tab1" checked />
-          <label for="tab1"
-                 role="tab"
-                 aria-selected="true"
-                 aria-controls="panel1"
-                 tabindex="0">Áttekintés</label>
-          <div id="tab-content1"
-               class="tab-content"
-               role="tabpanel"
-               aria-labelledby="description"
-               aria-hidden="false">
-            <p>fdsgsdgdfsgsd</p>
-          </div>
-        </li>
+    <button class="btn btn-orange">Tanfolyam megvásárlása</button>
+  </section>
 
-        <li>
-          <input type="radio" name="tabs" id="tab2" />
-          <label for="tab2"
-                 role="tab"
-                 aria-selected="false"
-                 aria-controls="panel2"
-                 tabindex="0">Tanterv</label>
-          <div id="tab-content2" class="tab-content" role="tabpanel" aria-labelledby="description"  aria-hidden="false">
-            <p>asd</p>
-          </div>
-        </li>
-
-        <li>
-          <input type="radio" name="tabs" id="tab3" />
-          <label for="tab3"
-                 role="tab"
-                 aria-selected="false"
-                 aria-controls="panel3"
-                 tabindex="0">Oktató</label>
-          <div id="tab-content3" class="tab-content" role="tabpanel" aria-labelledby="description"  aria-hidden="false">
-            <p>asddddddddddddddddddddddd</p>
-          </div>
-        </li>
-
-        <li>
-          <input type="radio" name="tabs" id="tab4" />
-          <label for="tab4"
-                 role="tab"
-                 aria-selected="false"
-                 aria-controls="panel4"
-                 tabindex="0">Vélemények</label>
-          <div id="tab-content4" class="tab-content" role="tabpanel" aria-labelledby="description"  aria-hidden="false">
-            <p>asgfdgsdfgsdfgsdfgfsdgfsdgsdfgd</p>
-          </div>
-        </li>
-      </ul>
-
-    </div>
-  </div>
-  <button class="btn btn-orange">Tanfolyam megvásárlása</button>
 </template>
 
 <script>
@@ -77,7 +82,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #course {
   padding-top: 110px;
   margin: 0 auto;
