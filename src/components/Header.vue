@@ -234,6 +234,7 @@ nav {
       font-size: 24px;
       line-height: 24px;
       color: #575757;
+      transition: all .2s ease-in;
 
       @include tablet {
         margin-right: 10px;
@@ -250,9 +251,12 @@ nav {
   }
 }
 
-nav > ul > li > a:visited,
-nav > ul > li > a:hover {
+nav > ul > li > a:visited{
   color: #575757;
+}
+
+nav > ul > li > a:hover {
+  color: black;
 }
 
 #user-buttons {

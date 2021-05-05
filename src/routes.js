@@ -13,6 +13,7 @@ import Login from "@/pages/Login";
 import Registration from "@/pages/Registration";
 import UserReg from "@/pages/UserReg";
 import CompanyReg from "@/pages/CompanyReg";
+import Members from "@/pages/Members";
 
 export const routes = [
     { path: "/", component: Home },
@@ -27,6 +28,7 @@ export const routes = [
     { path: "/termek", name: "Termék", component: Product },
     { path: "/kapcsolat", name: "Kapcsolat", component: Contact },
     { path: "/gyik", name: "GYIK", component: GYIK },
+    { path: "/tagok", name: "Tagok", component: Members },
     { path: "/login", component: Login },
     { path: "/registration", component: Registration },
     { path: "/user-registration", component: UserReg },

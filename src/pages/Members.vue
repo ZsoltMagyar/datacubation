@@ -1,40 +1,48 @@
 <template>
-  <PageHeader title="GYIK"></PageHeader>
-
-  <section id="faq">
-
+  <PageHeader title="Tagok"></PageHeader>
+  
+  <section id="members">
     <template v-for="n in 5" v-bind:key="n">
-      <div class="question">
-        <h3 class="blue-underline--thin">Kérdés</h3>
+      <div class="member">
+        <div>
+          <img src="https://via.placeholder.com/75x75" alt="">
+          <h3 class="blue-underline--thin">Tag neve</h3>
+        </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit ipsum mi feugiat blandit rhoncus gravida. Augue semper mi tristique non eget purus sed. Suspendisse et scelerisque tortor semper. Sed elementum, cras tempus, magna scelerisque arcu nisl nibh vulputate. Gravida tellus tempus dolor lorem nulla id ullamcorper dictum.
           Egestas nascetur massa turpis turpis imperdiet. Aliquet mi quam tristique velit in. Urna sit feugiat dignissim purus.</p>
       </div>
-    </template>
-
+    </template>  
   </section>
+  
 </template>
 
 <script>
 import PageHeader from "@/components/PageHeader";
 export default {
-  name: "GYIK",
-  components: {
-    PageHeader
-  }
+  name: "Members",
+  components: {PageHeader}
 }
 </script>
 
 <style scoped lang="scss">
 
-#faq {
+#members {
   max-width: 80%;
   margin: 0 auto;
   padding: 90px 0;
 }
 
-.question {
-
+.member {
   margin-bottom: 24px;
+
+  div {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 40px;
+    }
+  }
 
   p {
     padding: 12px 0;
