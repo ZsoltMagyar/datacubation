@@ -58,24 +58,27 @@
     </section>
 
     <section id="toWhom">
-      <h2 class="blue-underline--thin">Kiknek szól?</h2>
-      <div class="cards">
-        <div class="card">
-          <i class="las la-building"></i>
-          <h3>Kis- közép és nagyvállalatoknak</h3>
-          <span>még több információ</span>
-        </div>
-        <div class="card">
-          <i class="las la-play-circle"></i>
-          <h3>Startup, vagyis induló vállalatoknak</h3>
-          <span>még több információ</span>
-        </div>
-        <div class="card">
-          <i class="las la-rocket"></i>
-          <h3>Game changer, azaz fejlődő vállalatoknak</h3>
-          <span>még több információ</span>
+      <div>
+        <h2 class="blue-underline--thin--middle">Kiknek szól?</h2>
+        <div class="cards">
+          <div class="card">
+            <i class="las la-building"></i>
+            <h3>Kis- közép és nagyvállalatoknak</h3>
+            <span>még több információ</span>
+          </div>
+          <div class="card">
+            <i class="las la-play-circle"></i>
+            <h3>Startup, vagyis induló vállalatoknak</h3>
+            <span>még több információ</span>
+          </div>
+          <div class="card">
+            <i class="las la-rocket"></i>
+            <h3>Game changer, azaz fejlődő vállalatoknak</h3>
+            <span>még több információ</span>
+          </div>
         </div>
       </div>
+      <img src="../assets/images/programBg1.svg" alt="">
     </section>
 
     <section id="support">
@@ -144,24 +147,27 @@
     </section>
 
     <section id="whyJoin">
-      <h2 class="blue-underline--thin">Miért éri meg csatlakozni?</h2>
-      <div class="cards">
-        <div class="card">
-          <i class="las la-money-bill-wave"></i>
-          <h3>Díjtalan tagság</h3>
-          <span>még több információ</span>
-        </div>
-        <div class="card">
-          <i class="lar la-handshake"></i>
-          <h3>Értékterentő tudást szerezhetsz és adhatsz át</h3>
-          <span>még több információ</span>
-        </div>
-        <div class="card">
-          <i class="las la-user-graduate"></i>
-          <h3>Potenciális értékesítési lehetődégek</h3>
-          <span>még több információ</span>
+      <div>
+        <h2 class="blue-underline--thin--middle">Miért éri meg csatlakozni?</h2>
+        <div class="cards">
+          <div class="card">
+            <i class="las la-money-bill-wave"></i>
+            <h3>Díjtalan tagság</h3>
+            <span>még több információ</span>
+          </div>
+          <div class="card">
+            <i class="lar la-handshake"></i>
+            <h3>Értékterentő tudást szerezhetsz és adhatsz át</h3>
+            <span>még több információ</span>
+          </div>
+          <div class="card">
+            <i class="las la-user-graduate"></i>
+            <h3>Potenciális értékesítési lehetődégek</h3>
+            <span>még több információ</span>
+          </div>
         </div>
       </div>
+      <img src="../assets/images/programBg2.svg" alt="">
     </section>
 
     <section id="roadmap">
@@ -293,14 +299,43 @@ section {
 }
 
 #toWhom, #whyJoin {
-  padding: 250px 0;
-  flex-direction: column;
-  align-items: center;
+  max-width: 100%;
+  height: 1290px;
+  position: relative;
+  //background: #dafdfd;
+  img {
+    z-index: -100;
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }
+}
+
+#toWhom, #whyJoin {
+  margin: 20px 0 ;
+  padding: 0;
+  justify-content: center;
+
+  div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h2 {
+    //color: white;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
 
   .cards {
-    justify-content: center;
-    width: 100%;
+    height: auto;
+    max-width: 1440px;
     display: grid;
+    justify-content: center;
     gap: 80px;
     grid-template-columns: repeat(auto-fill, 382px);
     justify-items: center;
@@ -337,6 +372,10 @@ section {
 #support {
   display: flex;
   flex-direction: column;
+
+  h1 {
+    max-width: 50%;
+  }
 
   div {
     display: flex;

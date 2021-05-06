@@ -89,6 +89,20 @@ textarea {
     height: 5px;
     background: #2CB0C9;
 }
+.blue-underline--thin--middle {
+    position: relative;
+}
+.blue-underline--thin--middle::after {
+    content: '';
+    display: block;
+    margin-top: 10px;
+    width: 280px;
+    height: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #A2CFD1;
+}
 
 .btn {
     max-width: 500px;
