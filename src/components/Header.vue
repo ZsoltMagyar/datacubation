@@ -1,5 +1,6 @@
 <template>
   <header>
+    <div class="container">
       <div id="logo-container">
         <router-link to="/datacubation"><img id="logo" src="../assets/DataCubationLogo.svg" alt="Datacubation"></router-link>
       </div>
@@ -40,6 +41,8 @@
           </li>
         </ul>
       </nav>
+
+    </div>
   </header>
 </template>
 
@@ -77,11 +80,15 @@ name: "Header",
 }
 
 header {
-  height: 130px;
+  padding: 20px 0;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  z-index: 1;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   @include tablet {
     height: 100px;

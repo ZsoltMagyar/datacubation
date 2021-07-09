@@ -1,8 +1,11 @@
 <template>
     <PageHeader title="Kapcsolat"></PageHeader>
-    <div id="contact">
 
-      <section id="contact__form">
+  <section id="contact">
+
+    <div class="container flex justify-between">
+
+      <div id="contact__form">
         <h2 class="blue-underline--thin">Lépj kapcsolatba velünk!</h2>
 
         <form action="">
@@ -13,9 +16,9 @@
           <textarea name="" id="" cols="30" rows="10" placeholder="Üzenet"></textarea>
           <button class="btn btn-orange">Küldés</button>
         </form>
-      </section>
+      </div>
 
-      <section id="contact__list">
+      <div id="contact__list">
         <h2 class="blue-underline--thin">Elérhetőségeink:</h2>
         <ul>
 
@@ -50,8 +53,11 @@
           </li>
 
         </ul>
-      </section>
+      </div>
     </div>
+
+  </section>
+
 </template>
 
 <script>
@@ -66,13 +72,8 @@ name: "Contact",
 
 <style scoped lang="scss">
 #contact {
-  padding-top: 100px;
-  margin: 0 auto;
-  max-width: 1240px;
-  display: flex;
-
   &__form {
-    margin-right: 200px;
+    margin-right: 50px;
 
     form {
       display: flex;

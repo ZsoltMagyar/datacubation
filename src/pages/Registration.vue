@@ -1,14 +1,20 @@
 <template>
   <PageHeader title="Regisztráció"></PageHeader>
   <section>
-    <div id="user-reg">
-      <h2>Regisztráció</h2>
-      <button class="btn btn-orange" @click="$router.push('/user-registration')">Tovább</button>
+
+    <div class="container flex justify-between">
+
+      <div class="registration-rout">
+        <h2>Regisztráció</h2>
+        <button class="btn btn-orange" @click="$router.push('/user-registration')">Tovább</button>
+      </div>
+      <div class="registration-rout">
+        <h2>Cégként regisztrálok</h2>
+        <button class="btn btn-orange" @click="$router.push('/company-registration')">Tovább</button>
+      </div>
+
     </div>
-    <div id="company-reg">
-      <h2>Cégként regisztrálok</h2>
-      <button class="btn btn-orange" @click="$router.push('/company-registration')">Tovább</button>
-    </div>
+
   </section>
 </template>
 
@@ -23,20 +29,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
-section {
-  padding: 5% 10%;
+.registration-rout {
   display: flex;
-  justify-content: space-between;
-
-  div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+  flex-direction: column;
+  align-items: center;
     button {
       margin: 0;
       width: 200px;
     }
-  }
 }
 </style>

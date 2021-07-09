@@ -3,13 +3,17 @@
 
   <section id="faq">
 
-    <template v-for="n in 5" v-bind:key="n">
-      <div class="question">
-        <h3 class="blue-underline--thin">Kérdés</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit ipsum mi feugiat blandit rhoncus gravida. Augue semper mi tristique non eget purus sed. Suspendisse et scelerisque tortor semper. Sed elementum, cras tempus, magna scelerisque arcu nisl nibh vulputate. Gravida tellus tempus dolor lorem nulla id ullamcorper dictum.
-          Egestas nascetur massa turpis turpis imperdiet. Aliquet mi quam tristique velit in. Urna sit feugiat dignissim purus.</p>
-      </div>
-    </template>
+    <div class="container">
+
+      <template v-for="n in 5" v-bind:key="n">
+        <div class="question">
+          <h3 class="blue-underline--thin">Kérdés</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit ipsum mi feugiat blandit rhoncus gravida. Augue semper mi tristique non eget purus sed. Suspendisse et scelerisque tortor semper. Sed elementum, cras tempus, magna scelerisque arcu nisl nibh vulputate. Gravida tellus tempus dolor lorem nulla id ullamcorper dictum.
+            Egestas nascetur massa turpis turpis imperdiet. Aliquet mi quam tristique velit in. Urna sit feugiat dignissim purus.</p>
+        </div>
+      </template>
+
+    </div>
 
   </section>
 </template>
@@ -25,12 +29,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
-#faq {
-  max-width: 80%;
-  margin: 0 auto;
-  padding: 90px 0;
-}
 
 .question {
 

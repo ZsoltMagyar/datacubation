@@ -1,14 +1,18 @@
 <template>
   <footer>
-    <div id="logo">
-      <img src="../assets/DataCubationLogo.svg" alt="">
+
+    <div class="container flex items-center">
+      <div id="logo">
+        <img src="../assets/DataCubationLogo.svg" alt="">
+      </div>
+      <div id="footer-data">
+        <span>Adatvédelem</span>
+        <span>ÁSZF</span>
+        <span>Impresszum</span>
+        <span><router-link to="/gyik">GYIK</router-link></span>
+      </div>
     </div>
-    <div id="footer-data">
-      <span>Adatvédelem</span>
-      <span>ÁSZF</span>
-      <span>Impresszum</span>
-      <span><router-link to="/gyik">GYIK</router-link></span>
-    </div>
+
   </footer>
 </template>
 
@@ -22,11 +26,9 @@ name: "Footer"
 @import '/src/assets/mixins.scss';
 
 footer {
-  z-index: 3;
+  z-index: 1;
   width: 100%;
   height: 100px;
-  display: flex;
-  align-items: center;
   background: #fff;
   border-top: 4px solid #A2CFD1;
   font-size: 22px;

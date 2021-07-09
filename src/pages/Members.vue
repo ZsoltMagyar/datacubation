@@ -1,19 +1,25 @@
 <template>
   <PageHeader title="Tagok"></PageHeader>
-  
+
   <section id="members">
-    <template v-for="n in 5" v-bind:key="n">
-      <div class="member">
-        <div>
-          <img src="https://via.placeholder.com/75x75" alt="">
-          <h3 class="blue-underline--thin">Tag neve</h3>
+
+    <div class="container">
+
+      <template v-for="n in 5" v-bind:key="n">
+        <div class="member">
+          <div>
+            <img src="https://via.placeholder.com/75x75" alt="">
+            <h3 class="blue-underline--thin">Tag neve</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit ipsum mi feugiat blandit rhoncus gravida. Augue semper mi tristique non eget purus sed. Suspendisse et scelerisque tortor semper. Sed elementum, cras tempus, magna scelerisque arcu nisl nibh vulputate. Gravida tellus tempus dolor lorem nulla id ullamcorper dictum.
+            Egestas nascetur massa turpis turpis imperdiet. Aliquet mi quam tristique velit in. Urna sit feugiat dignissim purus.</p>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit ipsum mi feugiat blandit rhoncus gravida. Augue semper mi tristique non eget purus sed. Suspendisse et scelerisque tortor semper. Sed elementum, cras tempus, magna scelerisque arcu nisl nibh vulputate. Gravida tellus tempus dolor lorem nulla id ullamcorper dictum.
-          Egestas nascetur massa turpis turpis imperdiet. Aliquet mi quam tristique velit in. Urna sit feugiat dignissim purus.</p>
-      </div>
-    </template>  
+      </template>
+
+    </div>
+
   </section>
-  
+
 </template>
 
 <script>
@@ -25,12 +31,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
-#members {
-  max-width: 80%;
-  margin: 0 auto;
-  padding: 90px 0;
-}
 
 .member {
   margin-bottom: 24px;

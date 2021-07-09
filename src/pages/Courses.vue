@@ -1,31 +1,34 @@
 <template>
-  <div>
     <PageHeader title="Tanfolyamok"></PageHeader>
 
     <div id="courses-search">
 
     </div>
 
-    <div id="course-list">
+  <section>
 
-      <template v-for="n in 9" v-bind:key="n">
-        <router-link to="/tanfolyam">
-          <div class="course" >
-            <img src="https://via.placeholder.com/400x250">
-            <h3>Kurzus neve</h3>
-            <div>
-              <span class="course__price">300 000 Ft</span>
-              <span class="course__uploader">Feltöltő neve</span>
+    <div class="container">
+      <div id="course-list">
+
+        <template v-for="n in 9" v-bind:key="n">
+          <router-link to="/tanfolyam">
+            <div class="course" >
+              <img src="https://via.placeholder.com/400x250">
+              <h3>Kurzus neve</h3>
+              <div>
+                <span class="course__price">300 000 Ft</span>
+                <span class="course__uploader">Feltöltő neve</span>
+              </div>
             </div>
-          </div>
-        </router-link>
-      </template>
+          </router-link>
+        </template>
 
+      </div>
     </div>
 
-    <Pagination></Pagination>
+  </section>
 
-  </div>
+  <Pagination></Pagination>
 </template>
 
 <script>
@@ -45,15 +48,11 @@ name: "Courses",
 #courses-search {
   height: 80px;
   border-bottom: 4px solid #A2CFD1;
-  margin-bottom: 70px;
 }
 
 #course-list {
-  max-width: 1440px;
-  padding: 0 60px;
-  margin: 0 auto;
   display: grid;
-  grid-gap: 55px;
+  grid-gap: 60px 120px;
   grid-template-columns: repeat(auto-fill, 400px);
 }
 

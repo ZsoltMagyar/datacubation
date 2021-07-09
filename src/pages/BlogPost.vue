@@ -1,12 +1,20 @@
 <template>
-  <div>
-    <PageHeader title="Blog"></PageHeader>
+  <PageHeader title="Blog"></PageHeader>
 
-    <div id="blog-post-title">
+  <section class="blue-bottom-border p-10">
+
+    <div class="container flex justify-center">
+
       <h2>Blogbejegyzés címe</h2>
+
     </div>
 
-    <section>
+  </section>
+
+  <section>
+
+    <div class="container flex justify-between">
+
       <article id="blog-post-content">
 
         <img src="https://via.placeholder.com/750x450" alt="">
@@ -42,9 +50,11 @@
           </div>
         </div>
       </aside>
-    </section>
 
-  </div>
+    </div>
+
+  </section>
+
 </template>
 
 <script>
@@ -59,26 +69,12 @@ export default {
 
 <style scoped lang="scss">
 
-#blog-post-title {
-  width: 100%;
-  height: 120px;
-  border-bottom: 4px solid #A2CFD1;
-  margin-bottom: 110px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 section {
-  margin-bottom: 100px;
-  display: flex;
-  justify-content: center;
 
   article {
     text-align: left;
     width: 750px;
-    margin-right: 90px;
+    margin-right: 50px;
 
     #read-time {
       margin-top: 16px;

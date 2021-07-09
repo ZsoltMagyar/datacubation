@@ -1,4 +1,5 @@
 @import './mixins.scss';
+@import './layout.scss';
 
 * {
     box-sizing: border-box;
@@ -58,13 +59,18 @@ textarea {
     resize: vertical;
 }
 
-.container {
-    max-width: 1440px;
-    padding: 0 100px;
-}
+
 
 .page-wrapper {
     position: relative;
+}
+
+.blue-top-border {
+    border-top: 4px solid #A2CFD1;
+}
+
+.blue-bottom-border {
+    border-bottom: 4px solid #A2CFD1;
 }
 
 .blue-underline,
@@ -176,8 +182,6 @@ textarea {
 .registration-form {
     border: 1px solid #2E91A6;
     padding: 30px;
-    margin: 0 auto;
-    max-width: 80%;
 
     .form-control {
         display: flex;

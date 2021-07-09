@@ -1,7 +1,12 @@
 <template>
-  <div>
     <PageHeader title="Események"></PageHeader>
-  </div>
+
+    <section id="events">
+      <div class="container">
+
+      </div>
+    </section>
+
 </template>
 
 <script>

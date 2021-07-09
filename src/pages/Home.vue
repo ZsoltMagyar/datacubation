@@ -3,13 +3,17 @@
 
     <homeHero></homeHero>
 
-    <div class="divider">
-      <h1>vállalkozás élénkító program</h1>
-    </div>
+    <section class="p-40">
+      <div class="container">
+        <h1>vállalkozás élénkító program</h1>
+      </div>
+    </section>
 
     <homeAbout></homeAbout>
 
     <messageTo></messageTo>
+
+    <HomeBlog></HomeBlog>
 
     <HomePentaBullshit></HomePentaBullshit>
 
@@ -20,6 +24,7 @@
 import HomeHero from "./home-sections/HomeHero";
 import HomeAbout from "./home-sections/HomeAbout";
 import MessageTo from "./home-sections/MessageTo";
+import HomeBlog from "@/pages/home-sections/HomeBlog";
 import HomePentaBullshit from "./home-sections/HomePentaBullshit";
 export default {
   name: "Home.vue",
@@ -27,23 +32,18 @@ export default {
     homeHero: HomeHero,
     homeAbout: HomeAbout,
     messageTo: MessageTo,
-    HomePentaBullshit
+    HomePentaBullshit,
+    HomeBlog,
   },
 }
 </script>
 
 <style scoped lang="scss">
 
-.divider {
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  h1 {
-    text-transform: uppercase;
-    font-size: 64px;
-  }
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 64px;
 }
 
 </style>

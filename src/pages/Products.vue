@@ -1,12 +1,13 @@
 <template>
-  <div>
-    <PageHeader title="Termékek"></PageHeader>
+  <PageHeader title="Termékek"></PageHeader>
 
-    <div id="products-filter">
+  <div id="products-filter">
 
-    </div>
+  </div>
 
-    <section id="product-list">
+  <section>
+
+    <dic id="product-list" class="container">
 
       <template v-for="n in 9" v-bind:key="n">
         <router-link to="/termek">
@@ -30,10 +31,12 @@
         </router-link>
       </template>
 
-    </section>
+    </dic>
 
-    <Pagination></Pagination>
-  </div>
+
+  </section>
+
+  <Pagination></Pagination>
 </template>
 
 <script>
@@ -54,15 +57,11 @@ export default {
 #products-filter {
   height: 80px;
   border-bottom: 4px solid #A2CFD1;
-  margin-bottom: 70px;
 }
 
 #product-list {
-  max-width: 1440px;
-  padding: 0 60px;
-  margin: 0 auto;
   display: grid;
-  grid-gap: 55px;
+  grid-gap: 60px 120px;
   grid-template-columns: repeat(auto-fill, 400px);
 }
 

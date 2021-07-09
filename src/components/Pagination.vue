@@ -1,12 +1,19 @@
 <template>
-  <div id="pagination">
-    <div id="pagination-controls">
-      <div class="page-number page-number--active">1</div>
-      <div class="page-number">2</div>
-      <div class="page-number">3</div>
-      <div class="next-page">Következő ></div>
+  <section class="blue-top-border p-20">
+
+    <div class="container flex justify-end">
+
+        <div id="pagination-controls">
+          <div class="page-number page-number--active">1</div>
+          <div class="page-number">2</div>
+          <div class="page-number">3</div>
+          <div class="next-page">Következő ></div>
+        </div>
+
     </div>
-  </div>
+
+  </section>
+
 </template>
 
 <script>
@@ -17,7 +24,6 @@ export default {
 
 <style scoped lang="scss">
 #pagination {
-  margin-top: 85px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -27,13 +33,12 @@ export default {
 
   &-controls {
     display: flex;
-    margin-right: 90px;
 
     div {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-right: 22px;
+      margin-left: 22px;
       color: #2E91A6;
     }
 

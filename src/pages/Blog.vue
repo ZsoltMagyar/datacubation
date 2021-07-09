@@ -1,53 +1,29 @@
 <template>
-  <div class="page-wrapper">
     <PageHeader title="Blog"></PageHeader>
 
     <section id="blog">
 
-      <div class="blog-post">
-        <div class="blog-post-date">
-          <div class="blog-post-date__day">2</div>
-          <div class="blog-post-date__month-and-year">02,2021</div>
-        </div>
-        <img class="blog-post-picture" src="https://via.placeholder.com/260x145" alt="blog-post-picture">
-        <div class="blog-post-summary">
-          <h3 class="blog-post-summary__title"><router-link to="/blog-post">Blog post title</router-link></h3>
-          <p class="blog-post-summary__read-time">Olvasási idő: 123456 perc</p>
-          <p class="blog-post-summary__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum, nec facilisis pellentesque fringilla dolor nulla. Rhoncus erat felis vulputate molestie.</p>
-        </div>
-      </div>
+      <div class="container">
 
-      <div class="blog-post">
-        <div class="blog-post-date">
-          <div class="blog-post-date__day">2</div>
-          <div class="blog-post-date__month-and-year">02,2021</div>
+        <div class="blog-post" v-for="n in 3" :key="n">
+          <div class="blog-post-date">
+            <div class="blog-post-date__day">{{ n }}</div>
+            <div class="blog-post-date__month-and-year">02,2021</div>
+          </div>
+          <img class="blog-post-picture" src="https://via.placeholder.com/260x145" alt="blog-post-picture">
+          <div class="blog-post-summary">
+            <h3 class="blog-post-summary__title"><router-link to="/blog-post">Blog post title</router-link></h3>
+            <p class="blog-post-summary__read-time">Olvasási idő: 123456 perc</p>
+            <p class="blog-post-summary__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum, nec facilisis pellentesque fringilla dolor nulla. Rhoncus erat felis vulputate molestie.</p>
+          </div>
         </div>
-        <img class="blog-post-picture" src="https://via.placeholder.com/260x145" alt="blog-post-picture">
-        <div class="blog-post-summary">
-          <h3 class="blog-post-summary__title"><router-link to="/blog-post">Blog post title</router-link></h3>
-          <p class="blog-post-summary__read-time">Olvasási idő: 123456 perc</p>
-          <p class="blog-post-summary__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum, nec facilisis pellentesque fringilla dolor nulla. Rhoncus erat felis vulputate molestie.</p>
-        </div>
-      </div>
 
-      <div class="blog-post">
-        <div class="blog-post-date">
-          <div class="blog-post-date__day">2</div>
-          <div class="blog-post-date__month-and-year">02,2021</div>
-        </div>
-        <img class="blog-post-picture" src="https://via.placeholder.com/260x145" alt="blog-post-picture">
-        <div class="blog-post-summary">
-          <h3 class="blog-post-summary__title"><router-link to="/blog-post">Blog post title</router-link></h3>
-          <p class="blog-post-summary__read-time">Olvasási idő: 123456 perc</p>
-          <p class="blog-post-summary__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum, nec facilisis pellentesque fringilla dolor nulla. Rhoncus erat felis vulputate molestie.</p>
-        </div>
       </div>
 
     </section>
 
     <Pagination></Pagination>
 
-  </div>
 </template>
 
 <script>
@@ -64,28 +40,6 @@ name: "Blog",
 
 <style scoped lang="scss">
 @import '/src/assets/mixins.scss';
-
-#blog {
-  position: relative;
-  padding: 50px 250px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-
-  @include tablet {
-    padding: 50px 100px;
-  }
-
-  @include tablet-small {
-    padding: 25px 35px;
-  }
-
-  @include phone {
-    padding: 25px 25px;
-  }
-}
 
 .blog-post {
   display: flex;
