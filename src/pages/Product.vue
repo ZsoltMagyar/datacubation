@@ -15,42 +15,79 @@
 
       <div id="product__content">
 
-        <ul class="tabs" role="tablist">
-          <li>
-            <input type="radio" name="tabs" id="tab1" checked />
-            <label for="tab1"
-                   role="tab"
-                   aria-selected="true"
-                   aria-controls="panel1"
-                   tabindex="0">Leírás</label>
-            <div id="tab-content1"
-                 class="tab-content"
-                 role="tabpanel"
-                 aria-labelledby="description"
-                 aria-hidden="false">
-              <h5>Leírás</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et pellentesque bibendum donec sagittis, tincidunt lorem dignissim tincidunt. Viverra dui quam urna in enim. Vel viverra vulputate viverra consectetur porta blandit. Purus eget nunc turpis nulla dolor ut viverra sed non.
-                Faucibus euismod justo fringilla aliquam amet cras vestibulum. Ac et sit vel sed est lacinia. Lorem et faucibus imperdiet ullamcorper. Tempus lorem volutpat ultrices habitasse cras etiam sed id. In tellus enim sodales orci. Convallis amet sit ipsum sed malesuada fermentum. Volutpat egestas risus, magna viverra diam varius. Pulvinar ut integer lacinia mJetus, ornare volutpat id. Elementum ultrices platea magna lectus malesuada turpis pellentesque eu tempor. Nec, nibh in volutpat, egestas nunc. Id risus phasellus ut in at augue. In nec ornare id ligula. Nunc enim enim massa euismod bibendum imperdiet morbi augue. Tincidunt tellus vulputate suspendisse diam sagittis, id mi mi. Ut commodo posuere semper dui.
-              </p>
-            </div>
-          </li>
+        <div class="tab-container">
+          <div class="tab">
+            <button id="defaultOpen" class="tab-link" v-on:click="openTab($event, 'description')">Leírás</button>
+            <button class="tab-link" v-on:click="openTab($event, 'opinion')">Vélemények</button>
+          </div>
 
-          <li>
-            <input type="radio" name="tabs" id="tab2" />
-            <label for="tab2"
-                   role="tab"
-                   aria-selected="true"
-                   aria-controls="panel2"
-                   tabindex="0">Vélemények</label>
-            <div id="tab-content2"
-                 class="tab-content"
-                 role="tabpanel"
-                 aria-labelledby="description"
-                 aria-hidden="false">
-              <h5>Értékelések</h5>
-            </div>
-          </li>
-        </ul>
+          <div id="description" class="tab-content">
+            <p>Valmai bullshit összefoglaló</p>
+          </div>
+          <div id="opinion" class="tab-content">
+            <p>Valami bullshit tartalom</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad aspernatur autem consequatur
+              consequuntur dolor ex fuga modi, molestias nam non officiis quasi quia repellendus repudiandae sed velit
+              veniam, voluptate.</p>
+            <p>Aliquid commodi delectus eaque officiis quibusdam soluta vitae. Aliquam architecto corporis ea eius
+              eveniet excepturi facere iste, labore modi neque nisi quam quibusdam quos ratione repellat sed tempore
+              ullam velit?</p>
+            <p>Aut blanditiis deserunt doloribus harum neque non reiciendis. Consequatur esse et expedita id ipsa ipsum
+              iure laudantium vel? Adipisci architecto at cum, deleniti excepturi fuga laudantium nam nobis quod
+              similique!</p>
+            <p>Aperiam deserunt iste molestias natus omnis quos rem reprehenderit tempore tenetur voluptatum. Asperiores
+              assumenda aut debitis dolor dolore dolorem doloribus eos eveniet ex, odio, porro quisquam, quo saepe
+              tenetur ullam.</p>
+            <p>Omnis perspiciatis quae repellat sed sequi! Ab aut blanditiis cupiditate dignissimos dolor, dolore
+              dolores ex, explicabo id labore magnam magni maxime molestias numquam officiis perspiciatis quam soluta
+              tempore voluptas voluptatibus.</p>
+            <p>Ab ad adipisci alias aliquam asperiores aspernatur at blanditiis debitis distinctio, dolor doloremque
+              earum eveniet in ipsam itaque laudantium maiores maxime minima neque obcaecati odit repudiandae ullam
+              voluptatem. Asperiores, omnis.</p>
+            <p>Autem cupiditate dolorem earum eveniet illo illum iure, nemo nisi praesentium quasi quis, quod
+              reprehenderit unde veritatis voluptatum. Alias amet culpa ipsum iste iure labore molestiae praesentium
+              quam ratione veritatis.</p>
+            <p>A accusamus aliquid amet at blanditiis, consequuntur cum cupiditate distinctio dolor doloribus earum
+              error inventore iusto magni minima neque non numquam odio provident quisquam quos similique tempora unde
+              veritatis voluptates?</p>
+            <p>Atque dignissimos eligendi enim, et illo nam nisi porro voluptas! Aut dolore dolorem laborum quod
+              repudiandae similique tenetur. Aperiam consectetur ducimus enim facilis hic laborum obcaecati reiciendis
+              rerum ut vel.</p>
+            <p>Deserunt ea eum nobis quibusdam vitae. Aliquid eos ex nobis repellendus repudiandae! Ab accusantium amet
+              consequuntur dicta excepturi hic ipsum iste iusto laborum maiores molestiae, porro sint voluptates! Eum,
+              quisquam.</p>
+            <p>Cupiditate delectus distinctio et facere id libero molestiae nisi nobis non officia quis repudiandae,
+              sunt voluptatem. Debitis, doloribus eaque earum esse fugit incidunt maxime nemo, numquam optio possimus
+              repellat ullam.</p>
+            <p>Adipisci ducimus earum eos laborum omnis possimus sequi voluptates. Error exercitationem facilis harum
+              inventore non quisquam reprehenderit suscipit vitae? Aliquam amet blanditiis doloribus enim esse in ipsam,
+              perspiciatis unde velit.</p>
+            <p>Accusantium amet, aspernatur aut, consequuntur corporis, deserunt dicta ducimus enim explicabo fugiat
+              fugit harum impedit incidunt iste magni modi nihil perspiciatis quam recusandae reprehenderit sequi sit
+              suscipit temporibus veritatis voluptatum.</p>
+            <p>Asperiores deleniti deserunt distinctio dolore enim est ex expedita ipsam laboriosam molestiae, natus,
+              nihil nostrum officia officiis quisquam, reiciendis saepe sint ut. Facere minus nihil perferendis
+              quibusdam quisquam repudiandae soluta!</p>
+            <p>Dolorum ea, quod! Cupiditate deleniti distinctio impedit minima, repellat sed temporibus ut voluptas!
+              Aliquid autem beatae cum delectus distinctio doloremque, eaque eos eveniet explicabo nihil nulla
+              repellendus tempore voluptate voluptatem?</p>
+            <p>Consectetur, cupiditate expedita. A, asperiores corporis debitis distinctio eum id incidunt ipsam iste
+              labore laboriosam laudantium minima minus, nihil nisi obcaecati praesentium quaerat quod rem repudiandae
+              sed sequi unde veniam.</p>
+            <p>Aliquid amet aspernatur cupiditate delectus, dolor esse, expedita hic inventore magni molestiae
+              perferendis quae quas sed. Atque consequuntur ducimus, esse iure modi necessitatibus nesciunt provident
+              quasi, reprehenderit, repudiandae ut voluptates!</p>
+            <p>Architecto aspernatur dolor dolore facere itaque molestiae natus nihil officiis quibusdam, quisquam.
+              Architecto assumenda deserunt labore magni obcaecati placeat sequi soluta suscipit vero vitae! Aperiam
+              debitis explicabo quia repellendus veniam.</p>
+            <p>Ad, culpa cum delectus deserunt, dolorum ducimus ea eaque ex illo incidunt laborum mollitia
+              necessitatibus nemo neque recusandae sapiente sequi, totam voluptatem voluptates voluptatum? Assumenda cum
+              ea impedit maxime voluptates.</p>
+            <p>Commodi debitis dicta dolor dolore doloremque, eos, excepturi harum incidunt libero nam, nihil odit qui
+              quidem recusandae ullam vero vitae voluptate! Alias commodi consequatur cumque laborum quasi tempora
+              temporibus voluptatem.</p>
+          </div>
+        </div>
 
       </div>
 
@@ -95,23 +132,47 @@
   </section>
 </template>
 
-<script>
+<script>8
 import PageHeader from "@/components/PageHeader";
 export default {
   name: "Product",
   components: {
     PageHeader
+  },
+  mounted() {
+    document.getElementById("defaultOpen").click();
+  },
+  methods: {
+    openTab: (event, tabName) => {
+      let i, tabContent, tabLinks;
+
+      tabContent = document.getElementsByClassName("tab-content");
+      for (i = 0; i < tabContent.length; i++) {
+        tabContent[i].style.display = "none";
+      }
+
+      tabLinks = document.getElementsByClassName("tab-link");
+      for (i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+      }
+
+      document.getElementById(tabName).style.display = "block";
+      event.currentTarget.className += " active";
+    }
   }
 }
 </script>
 
 <style scoped lang="scss">
 #product {
-  display: flex;
-  flex-direction: column;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   &__header {
-    margin: 0 auto;
     max-width: 900px;
     display: inline-block;
 
@@ -134,55 +195,44 @@ export default {
   }
 }
 
-.tabs {
-  height: 600px;
-  padding: 18px 0;
-  list-style: none;
-  position: relative;
-  text-align: left;
+.tab-container {
+  margin: 20px 0;
+  display: flex;
+}
+
+.tab {
   display: flex;
   flex-direction: column;
+  background-color: transparent;
+  margin-right: 24px;
 
-  li {
-    display: block;
-  }
-  input[type="radio"] {
-    position: absolute;
-    top: 0;
-    left: -9999px;
-  }
-  label {
-    width: 180px;
-    margin-bottom: 26px;
-    display: inline-block;
-    border-bottom: 1px solid #2E91A6;
-    font-size: 20px;
-    font-weight: normal;
+  button {
+    width: 100%;
+    background-color: inherit;
+    border: none;
+    outline: none;
     cursor: pointer;
-    position: relative;
+    padding: 20px 0;
+    margin-right: 20px;
+    transition: 0.3s;
+    font-size: 24px;
+    color: #707070;
+    text-align: left;
+    //border-bottom: 4px solid #A2CFD1;
+
     &:hover {
+      background-color: #ddd;
+    }
+
+    &.active {
       color: #2E91A6;
     }
   }
-  .tab-content{
-    width: 760px;
-    z-index: 2;
-    display: none;
-    overflow: auto;
-    font-size: 17px;
-    line-height: 25px;
-    position: absolute;
-    top: 0;
-    left: 220px;
-  }
+}
 
-  [id^="tab"]:checked + label {
-    top: 0;
-    color: #2E91A6;
-  }
-  [id^="tab"]:checked ~ [id^="tab-content"] {
-    display: block;
-  }
+.tab-content {
+  display: none;
+  padding: 20px 0;
 }
 
 #related-products {
@@ -199,7 +249,6 @@ export default {
 }
 
 .product {
-
   &__actions {
     display: flex;
     justify-content: flex-end;
