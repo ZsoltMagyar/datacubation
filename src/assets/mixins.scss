@@ -6,7 +6,7 @@
 }
 
 @mixin tablet{
-  @media (min-width: 996px) and (max-width: 1239px){
+  @media (min-width: 996px) and (max-width: 1439px){
     @content;
   }
 };

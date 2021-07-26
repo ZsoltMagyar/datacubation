@@ -3,7 +3,7 @@
 
   <section>
 
-    <div class="container">
+    <div class="container flex justify-center">
 
       <form class="registration-form" action="#">
 
@@ -85,4 +85,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.registration-form {
+  width: 800px;
+}
 </style>
